@@ -1,4 +1,4 @@
-package com.atguigu.gulimall.member;
+package com.atguigu.gulimall.coupon;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
@@ -9,13 +9,12 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan(basePackages = {"com.atguigu"})
-@MapperScan("com.atguigu.gulimall.member.dao")
+@MapperScan("com.atguigu.gulimall.coupon.dao")
 @EnableDiscoveryClient
-@EnableFeignClients("com.atguigu.gulimall.member.controller.feign")//远程调用
-public class GulimallMemberApplication {
+public class GulimallCouponApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(GulimallMemberApplication.class, args);
+        SpringApplication.run(GulimallCouponApplication.class, args);
     }
 
 }
